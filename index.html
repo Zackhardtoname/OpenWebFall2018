@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127161599-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127161599-1');
+	</script>
+
+	<title>Welcome to Zack's Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/script.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Zack Light, Yi Zhang, resume, Fintech, Linkedin, Zack, Light, Yi, Zhang">
+	<meta name="description" content="Zack Light/Yi Zhang's resume">
+	<meta name="author" content="Zack Light, Yi Zhang">
+</head>
+
+<body>
+	<div id="nav" class="caption">
+		<a id="myName-nav" href="#intro">Zack Light</a>
+		<a id="nav-right" href="#about">About</a>
+		<a href="#portfolio">Portfolio</a>
+		<a href="#contact" onclick="emailColor()">Contact</a>
+		<a href="#books">Readings</a>
+	</div>
+		<div id="intro">
+			<div id="me">
+				<h4>
+					<i>Hi I'm</i>
+				</h4>
+				<h1>
+					<strong id="myName-intro">Zack Light</strong>
+				</h1>
+				<h2 class="caption"> "Go to bed determined, wake up satisfied."</h2>
+				<h5 class="author">-- Dwayne Johnson </h5>
+			</div>
+			<div class="btnList">
+				<a target="_blank" class="btn btn-default" href="https://www.linkedin.com/in/zack-zhang/">
+					<i class="fab fa-linkedin"></i>Linkedin</a>
+				<a target="_blank" class="btn btn-default" href="https://github.com/Zackhardtoname">
+					<i class="fab fa-github-square"></i>Github</a>
+				<a target="_blank" class="btn btn-default" href="https://www.facebook.com/profile.php?id=100009319733013&ref=bookmarks">
+					<i class="fab fa-facebook"></i>Facebook</a>
+			</div>
+		</div>
+		<div class="page" id="about">
+			<div>
+				<h1 class="caption">Zack Light</h1>
+				<p>&nbsp;&nbsp;Targeting the Fintech industry with cross-sectional skills. I am an extremely driven student at
+					Boston
+					University. Currently, I am looking for a part-time internship for the fall semester of 2018.</p>
+				<embed id="resume" src="files/Yi_(Zack)_Zhang_Resume.pdf" />
+				<h2>
+					<a href="files/Yi_(Zack)_Zhang_Resume.pdf" target="_blank">Download</a> my resume!</h2>
+			</div>
+			<div id="myPic">
+				<img src="./img/Portrait_background.jpg" alt="my portrait"> </div>
+		</div>
+		<div class="page" id="portfolio">
+			<h1 class="caption">My Portfolio</h1>
+			<div id="portfolio-container">
+				<div id="studydate">
+					<h2>
+						<a href="https://studydate.me" target="_blank">StudyDate</a>
+					</h2>
+					<h3>-- helps you automatically connect with your fellow classmates</h3>
+				</div>
+				<div id="registerBot">
+					<h2>
+						<a href="https://chrome.google.com/webstore/detail/bu-register-bot/lhiiophbbjgjmieeokmlmjkpdfkhcbcp?hl=en" target="_blank">BU
+							RegisterBot
+						</a>
+					</h2>
+					<h3>-- helps BU students automatically register classes, for
+						<em>
+							<strong>
+								<span style="color: red; ">FREE!</span>
+							</strong>
+						</em>
+					</h3>
+				</div>
+				<div id="random-quote-machine">
+					<h2>
+						<a href="https://codepen.io/Zackhardtoname/pen/QQXqzd" target="_blank">Random Quote Machine</a>
+					</h2>
+					<h3>-- generates random quotes to boost your motivation!</h3>
+				</div>
+				<div id="tribute-page">
+					<h2>
+						<a href="https://codepen.io/Zackhardtoname/pen/wpJgMM" target="_blank">Elon Musk Tribute Page</a>
+					</h2>
+					<h3>-- Steve Jobs&#39 Successor</h3>
+				</div>
+				<div id="calculator-link">
+					<h2>
+						<a href="https://codepen.io/Zackhardtoname/pen/erKpbP/">Annotatable Calculator</a>
+					</h2>
+					<h3>-- a high-end calculation!</h3>
+				</div>
+				<div id="calculator-demo">
+					<p data-height="530" data-theme-id="0" data-slug-hash="XxWMZP" data-default-tab="result" data-user="Zackhardtoname"
+					 data-pen-title="StudyDate Calculator" class="codepen">Loading<a href="https://codepen.io/Zackhardtoname/pen/XxWMZP/">StudyDate
+							Calculator</a> by Zack Light (<a href="https://codepen.io/Zackhardtoname">@Zackhardtoname</a>) on <a href="https://codepen.io"></a>.</p>
+					<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+				</div>
+			</div>
+		</div>
+		<div class="page" id="contact">
+			<h1 class="caption">Contact Me</h1>
+			<p>Copyright @ Yi Zhang/Zack Light 2018. All Rights Reserved.</p>
+			<p id="email">ZackL@bu.edu</p>
+			<div class="tooltip">
+				<button onclick="copyToClipboard('#email')" onmouseout="outFunc()">
+					<span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+					Copy my email</button>
+			</div>
+		</div>
+		<div id="particles-js"></div>
+		<div id="books">
+			<h1 class="caption">My Readings</h1>
+			<h3> Some books I have recently read or listened. Let's discuss them! </h3>
+			<div class="slideshow">
+				<div class="carrousel">
+					<div class="shadow">
+						<img src="./img/books/the_modern_intelligectual_tradition.jpg" alt="Modern Intellectual Tradition by Lawrence E. Cahoone">
+					</div>
+					<div class="book-caption">
+						<a target="_blank" href="https://www.goodreads.com/book/show/10982690-modern-intellectual-tradition">
+							<h3>Modern Intellectual Tradition</h3>
+							<p>Reading right now</p>
+						</a>
+					</div>
+					<div class="shadow">
+						<img src="./img/books/the_naked_sun.jpg" alt="The Naked Sun by Isaac Asimov">
+					</div>
+					<div class="book-caption">
+						<a target="_blank" href="https://www.goodreads.com/book/show/30016.The_Naked_Sun">
+							<h3>The Naked Sun</h3>
+							<p>Good read. I might read the other two in the series.</p>
+						</a>
+					</div>
+					<div class="shadow">
+						<img src="./img/books/dark_pools.jpg" alt="Dark Pool by Scott Patterson">
+					</div>
+					<div class="book-caption">
+						<a target="_blank" href="https://www.goodreads.com/book/show/12917124-dark-pools?from_search=true">
+							<h3>Dark Pool</h3>
+							<p>Good read. Lots of industrial knowledge.</p>
+						</a>
+					</div>
+					<div class="shadow">
+						<img src="./img/books/the_intelligent_investor.jpg" alt="The Intelligent Investor by Benjamin Graham">
+					</div>
+					<div class="book-caption">
+						<a target="_blank" href="https://www.goodreads.com/book/show/106835.The_Intelligent_Investor?from_search=true">
+							<h3>The Intelligent Investor</h3>
+							<p>Pretty good. I think I should also read something more modern.</p>
+						</a>
+					</div>
+					<div class="shadow">
+						<img src="./img/books/the_everything_store.jpg" alt="The Everything Store by Brad Stone">
+					</div>
+					<div class="book-caption">
+						<a target="_blank" href="https://www.goodreads.com/book/show/17660462-the-everything-store?ac=1&from_search=true">
+							<h3>The Everything Store</h3>
+							<p>Loved it. Looking forward to a longer version in the future.</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	<script src="js/particles.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
