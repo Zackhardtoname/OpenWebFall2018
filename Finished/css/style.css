@@ -6,8 +6,8 @@
 	background: black;
     position: fixed; 
     top: 0;
-	width: 100%; 
 	z-index: 1000;
+	width: 100%; 
 	display: grid;
 	grid-template-columns: repeat(11, 1fr);
 }
@@ -20,6 +20,23 @@
 #myName-nav:hover {
 	color: greenyellow;
 	background-color: black;
+}
+
+#intro {
+	background: url("../img/p1.jpg");
+	width: 100%;
+	padding-top: 46px;
+	padding-bottom: 40px;
+}
+
+#me {
+	text-align: center;
+	background-color: black;
+	opacity: .9;
+	padding: 1px;
+	width: 45%;
+	margin: 28px auto 0;
+	border-radius: 10px;
 }
 
 .page{
@@ -69,33 +86,21 @@ margin-bottom: 2.5%;
 	color: #D1413F;
 }
 
-/* Main content */
-#me {
-	text-align: center;
-	background-color: black;
-	opacity: .9;
-	padding: 1px;
-	width: 45%;
-	margin: 28px auto 0;
-	border-radius: 10px;
-}
-
 .btnList {
 	margin: 20px;
 	text-align: center;
 }
 
+.btn-default {
+	color: #337ab7;
+	background-color: black;
+	border-color: black;
+	font-size: 1.7em;
+}
+
 .author {
 	text-align: right;
 	margin-right: 10px;
-}
-
-#intro {
-	background: url("../img/p1.jpg");
-	width: 100%;
-	padding-top: 66px;
-	padding-bottom: 40px;
-	margin-top: -20px;
 }
 
 #about {	
@@ -124,18 +129,6 @@ margin-bottom: 2.5%;
 	background: url("../img/p3.jpg");
 }
 
-#contact {
-	background: url("../img/p4.jpg");
-	padding-right: 0;
-}
-
-.btn-default {
-	color: #337ab7;
-	background-color: black;
-	border-color: black;
-	font-size: 1.7em;
-}
-
 #portfolio-container > div {
     padding: 5%;
 }
@@ -143,6 +136,11 @@ margin-bottom: 2.5%;
 #contact p {
 	font-size: 15px;
 	text-align: left;
+}
+
+#contact {
+	background: url("../img/p4.jpg");
+	padding-right: 0;
 }
 
 #contact button {

@@ -1,0 +1,182 @@
+.caption {
+    font-family: Lobster, roboto, sans-serif;
+}
+
+#nav {
+    background: black;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 1000;*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+#myName-nav {
+    background-color: #337ab7;
+    color: white;
+}
+
+#myName-nav:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+#intro {
+    background: url('../img/p1.jpg');
+    width: 100%;
+    padding-top: 46px;
+    padding-bottom: 40px;
+}
+
+.page{
+    padding: 20px 5%;
+}
+
+.page div {
+    background: no-repeat center 100%;
+    min-height: 300px;
+}
+
+#myName-intro::before  {
+    content: "";
+    display: inline-block;
+    border: 1px solid white;
+    width: 5%;
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+}
+
+#myName-intro::after  {
+    content: "";
+    display: inline-block;
+    border: 1px solid white;
+    width: 5%;
+    margin-left: 2%;
+    margin-bottom: 2.5%;
+}
+
+#me {
+    text-align: center;
+    background-color: black;
+    opacity: .9;
+    width: 45%;
+    margin: 28px auto 0;
+    border-radius: 10px;
+}
+
+.btnList {
+    font-size: .5em;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github-square {
+    color: #6e5494;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-youtube {
+    color: #D1413F;
+}
+
+.btnList {
+    margin: 20px;
+    text-align: center;
+}
+
+.btn-default {
+    color: #337ab7;
+    background-color: black;
+    border-color: black;
+    font-size: 1.7em;
+}
+
+#about {
+    background: url("../img/p2.jpg");
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#resume {
+    width: 100%;
+    height: 600px;
+}
+
+#myPic img{
+    height: 50%;
+    width: 50%;
+    border-radius: 5%;
+    box-sizing: border-box;
+    border: 1px double gold;
+    border-bottom: 0px;
+    margin: 5% 20% 0;
+}
+
+#portfolio {
+    background: url("../img/p3.jpg");
+}
+
+#portfolio-container > div {
+    padding: 5%;
+}
+
+@media(min-width: 768px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    a {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    .btnList {
+        font-size: 1em;
+    }
+
+
+    #nav-right {
+        grid-column-start: 8;
+    }
+
+    /*fallback if no support for grid*/
+    #about {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+    }
+
+    @supports (display: grid) {
+        #myPic {
+            grid-column-start: 2;
+            margin-top: 140px;
+            padding-left: 30px;
+        }
+
+        #myPic img{
+            height: 100%;
+            width: 100%;
+        }
+
+        #portfolio-container {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}
